@@ -1,4 +1,21 @@
 # EFF_B5 
+- batch_size = 16
+- lr = 0.001
+```
+train_transform = A.Compose([
+    A.Resize(CFG['IMG_SIZE']*2, CFG['IMG_SIZE']*2),
+    A.RandomCrop(p=1, height=CFG['IMG_SIZE'], width=CFG['IMG_SIZE']),
+    A.CoarseDropout(max_holes=8, max_height=32, max_width=32, p=0.5),
+    A.OneOf([
+        A.MotionBlur(p=1),
+        A.OpticalDistortion(p=1),
+        A.GaussNoise(p=1)
+    ], p=0.3),
+    A.HorizontalFlip(p=0.5),
+    A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225),
+                max_pixel_value=255.0, always_apply=False, p=1.0),
+    ToTensorV2()
+```
 ```
 100%
 296/296 [02:43<00:00, 2.02it/s]
