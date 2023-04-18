@@ -143,3 +143,35 @@ Valid Loss : 3.4837
 Valid Accuracy : 0.1268
 trigger : 1
 ```
+
+# VGG
+
+```
+--------------------------------------------------
+Epoch : 1/100......
+Train Loss : inf
+Valid Loss : 0.0410
+Valid Accuracy : 0.0321
+--------------------------------------------------
+Epoch : 2/100......
+Train Loss : inf
+Valid Loss : 0.0391
+Valid Accuracy : 0.0304
+--------------------------------------------------
+Epoch : 3/100......
+Train Loss : 0.0566
+Valid Loss : 0.0391
+Valid Accuracy : 0.0304
+--------------------------------------------------
+Epoch : 4/100......
+Train Loss : 0.0538
+Valid Loss : 0.0738
+Valid Accuracy : 0.0262
+trigger : 1
+--------------------------------------------------
+Epoch : 5/100......
+Train Loss : inf
+Valid Loss : 0.0573
+Valid Accuracy : 0.0262
+trigger : 2
+```
