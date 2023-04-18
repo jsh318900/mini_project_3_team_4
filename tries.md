@@ -1,5 +1,5 @@
 # ALEXNET 첫번째 시도
-
+```
 --------------------------------------------------
 Epoch : 1/50......
 Train Loss : 3.6522
@@ -142,3 +142,4 @@ Train Loss : 3.4549
 Valid Loss : 3.4837
 Valid Accuracy : 0.1268
 trigger : 1
+```
